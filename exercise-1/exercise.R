@@ -7,3 +7,11 @@ setwd("~/INFO201/Modules/m18-shiny/exercise-1")
 source('./scripts/BuildScatter.R')
 
 # Use your BuildScatter function to draw a well labeled ggplot scatterplot of the iris data
+BuildScatter(data = iris, 
+             x.var = 'Sepal.Length', 
+             y.var = 'Sepal.Width',
+             #color.var = 'Species', 
+             title = 'Iris Dataset', 
+             x.label = 'Sepal Length', 
+             y.label = 'Sepal Width'
+)
